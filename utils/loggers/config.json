@@ -1,0 +1,6 @@
+{
+    "formatAccess": "[:date[iso]] ENV::env user-agent::user-agent method::method url::url status::status response-time::response-time ms",
+    "accessLogFile": "access.log",
+    "logFolder": "log"
+}
+
