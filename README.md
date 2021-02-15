@@ -1,5 +1,5 @@
 # Repository name: express_server
-- Empty express server
+- empty Express server
 
 # Installation and running the program
 - npm install
@@ -23,11 +23,10 @@
 - GET api/v01/service/test_endpoint - test logs from middleware functions to console
 
 # System logs
-Logging handled inside the "/log" folder (created when app is started):
-- "access.log" is for all incoming requests
+- "src/log/access.log" is for requests
 
 # File structure in project
-- "utils/loggers" - logger functions for the mentioned
+- "src/utils/loggers" - logger functions for the mentioned
 
 # Remarks
 - if port not set in .env file, default port 3000 is used
