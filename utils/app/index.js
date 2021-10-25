@@ -1,4 +1,4 @@
-exports.normalizePort = function(val) {
+exports.normalizePort = function (val) {
     const port = parseInt(val, 10);
 
     if (isNaN(port)) {
@@ -12,25 +12,24 @@ exports.normalizePort = function(val) {
     }
 
     return false;
-}
-  
-exports.onError = function(error) {
+};
+
+exports.onError = function (error) {
     if (error.syscall !== 'listen') {
         throw error;
     }
 
     // handle specific listen errors with friendly messages
     switch (error.code) {
-    case 'EACCES':
-        console.error('port requires elevated privileges');
-        process.exit(1);
-        break;
-    case 'EADDRINUSE':
-        console.error('port is already in use');
-        process.exit(1);
-        break;
-    default:
-        throw error;
+        case 'EACCES':
+            console.error('port requires elevated privileges');
+            process.exit(1);
+            break;
+        case 'EADDRINUSE':
+            console.error('port is already in use');
+            process.exit(1);
+            break;
+        default:
+            throw error;
     }
-}
-  
+};
